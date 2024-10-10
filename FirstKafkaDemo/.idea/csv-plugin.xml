@@ -108,6 +108,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="/macsripts/kafka-connect.sh">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="/macsripts/kafka-consumer.sh">
           <value>
             <Attribute>
@@ -137,6 +144,13 @@
           </value>
         </entry>
         <entry key="/src/main/java/com/demo/App.java">
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/main/java/com/demo/AppDocker.java">
           <value>
             <Attribute>
               <option name="separator" value=";" />

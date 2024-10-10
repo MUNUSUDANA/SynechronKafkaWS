@@ -18,9 +18,9 @@ public class RewardsApplication {
 
     public static void main(String[] args) {
         Properties properties = new Properties();
-        properties.put(StreamsConfig.APPLICATION_ID_CONFIG, "rewards-stream-id2");
+        properties.put(StreamsConfig.APPLICATION_ID_CONFIG, "rewards-stream-id3");
         properties.put(StreamsConfig.BOOTSTRAP_SERVERS_CONFIG,"localhost:9092, localhost:9093");
-//        properties.put(StreamsConfig.NUM_STREAM_THREADS_CONFIG, 3);
+        properties.put(StreamsConfig.NUM_STREAM_THREADS_CONFIG, 3);
 
         StreamsBuilder builder = new StreamsBuilder();
         KStream<String, PosInvoice> ks1 = builder.stream(AppConfigs.posTopicName,
