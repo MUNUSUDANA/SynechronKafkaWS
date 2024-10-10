@@ -1,0 +1,79 @@
+[
+  {
+    "userId": 1,
+    "userName": "Shalini",
+    "age": 30,
+    "notification": ["sms"]
+  },
+  {
+    "userId": 2,
+    "userName": "Siya",
+    "age": 2
+  },
+  {
+    "userId": 3,
+    "userName": "Jack",
+    "age": 10,
+    "notification": ["email"]
+  },
+  {
+    "userId": 4,
+    "userName": "Ron",
+    "age": 35
+  },
+  {
+    "userId": 5,
+    "userName": "Don",
+    "age": 15
+  },
+  {
+  "userId": 6,
+  "userName": "Maya",
+  "age": 45
+  },
+  {
+    "userId": 7,
+    "userName": "Sam",
+    "age": 46
+  },
+  {
+    "userId": 8,
+    "userName": "Nisha",
+    "age": 8
+  },
+  {
+    "userId": 9,
+    "userName": "Nitin",
+    "age": 23
+  },
+  {
+    "userId": 10,
+    "userName": "Asha",
+    "age": 43
+  },
+  {
+    "userId": 11,
+    "userName": "John",
+    "age": 44
+  },
+  {
+    "userId": 12,
+    "userName": "Nivedita",
+    "age": 3
+  },
+  {
+    "userId": 13,
+    "userName": "Bala",
+    "age": 56
+  },
+  {
+    "userId": 14,
+    "userName": "Charlie",
+    "age": 53
+  },
+  {
+    "userId": 15,
+    "userName": "Payal",
+    "age": 21
+  }
+]

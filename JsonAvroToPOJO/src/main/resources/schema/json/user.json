@@ -1,0 +1,30 @@
+{
+  "title": "User",
+  "javaType": "com.demo.types.User",
+  "type": "object",
+  "properties": {
+    "userId": {
+      "description": "The unique identifier for a user",
+      "type": "integer"
+    },
+    "userName": {
+      "description": "Name of the user",
+      "type": "string"
+    },
+    "age": {
+      "description": "The age of the user",
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "notification": {
+      "description": "Notifications way for the user",
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    }
+  },
+  "required": [ "userId", "userName", "age" ]
+}

@@ -1,0 +1,30 @@
+{
+  "title": "Product",
+  "javaType": "com.demo.types.Product",
+  "type": "object",
+  "properties": {
+    "pId": {
+      "description": "The unique identifier for a product",
+      "type": "integer"
+    },
+    "prodName": {
+      "description": "Name of the product",
+      "type": "string"
+    },
+    "price": {
+      "description": "The price of the product",
+      "type": "number",
+      "exclusiveMinimum": 0,
+      "required": true
+    },
+    "colors": {
+      "description": "colors available for the product",
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    }
+  },
+  "required": [ "pId", "prodName", "price" ]
+}

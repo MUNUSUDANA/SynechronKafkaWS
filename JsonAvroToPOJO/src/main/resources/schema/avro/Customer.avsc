@@ -1,0 +1,10 @@
+{"namespace": "com.demo.avro",
+  "type": "record", "name": "Customer",
+  "fields": [
+    {"name": "firstName", "type": "string"},
+    {"name": "lastName", "type": "string"},
+    {"name": "city",  "type": "string", "default": "Pune"},
+    {"name": "phoneNumber",  "type": "string"},
+    {"name": "age",  "type": "int"}
+  ]
+}
