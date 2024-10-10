@@ -1,0 +1,5 @@
+com/demo/invoice/types/PosInvoice.class
+com/demo/invoice/types/HadoopRecord.class
+com/demo/invoice/types/Notification.class
+com/demo/invoice/types/DeliveryAddress.class
+com/demo/invoice/types/LineItem.class

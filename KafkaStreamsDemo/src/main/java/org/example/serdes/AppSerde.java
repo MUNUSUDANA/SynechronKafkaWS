@@ -1,5 +1,8 @@
 package org.example.serdes;
 
+import com.demo.invoice.types.HadoopRecord;
+import com.demo.invoice.types.Notification;
+import com.demo.invoice.types.PosInvoice;
 import com.demo.types.Product;
 import com.demo.types.User;
 import org.apache.kafka.common.serialization.LongDeserializer;
@@ -39,5 +42,53 @@ public class AppSerde {
 //        map.put(JsonDeserializer.VALUE_CLASS_NAME_CONFIG, Product.class);
        // userSerde.configure(map, false);
         return  userSerde;
+    }
+
+    static final class PosInvoiceSerde extends Serdes.WrapperSerde<PosInvoice> {
+        PosInvoiceSerde() {
+            super(new JsonSerializer<>(), new JsonDeserializer<>());
+        }
+    }
+
+    public static Serde<PosInvoice> PosInvoice() {
+        PosInvoiceSerde serde = new PosInvoiceSerde();
+
+        Map<String, Object> serdeConfigs = new HashMap<>();
+        serdeConfigs.put(JsonDeserializer.VALUE_CLASS_NAME_CONFIG, PosInvoice.class);
+        serde.configure(serdeConfigs, false);
+
+        return serde;
+    }
+
+    static final class NotificationSerde extends Serdes.WrapperSerde<Notification> {
+        NotificationSerde() {
+            super(new JsonSerializer<>(), new JsonDeserializer<>());
+        }
+    }
+
+    public static Serde<Notification> Notification() {
+        NotificationSerde serde = new NotificationSerde();
+
+        Map<String, Object> serdeConfigs = new HashMap<>();
+        serdeConfigs.put(JsonDeserializer.VALUE_CLASS_NAME_CONFIG, Notification.class);
+        serde.configure(serdeConfigs, false);
+
+        return serde;
+    }
+
+    static final class HadoopRecordSerde extends Serdes.WrapperSerde<HadoopRecord> {
+        HadoopRecordSerde() {
+            super(new JsonSerializer<>(), new JsonDeserializer<>());
+        }
+    }
+
+    public static Serde<HadoopRecord> HadoopRecord() {
+        HadoopRecordSerde serde = new HadoopRecordSerde();
+
+        Map<String, Object> serdeConfigs = new HashMap<>();
+        serdeConfigs.put(JsonDeserializer.VALUE_CLASS_NAME_CONFIG, HadoopRecord.class);
+        serde.configure(serdeConfigs, false);
+
+        return serde;
     }
 }
