@@ -5,6 +5,8 @@
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../JsonAvroToPOJO/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../JsonAvroToPOJO/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../JsonInvoiceProject/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../JsonInvoiceProject/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../KafkaStreamsDemo/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../KafkaStreamsDemo/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../ThirdTransactionProducerDemo/src/main/java" charset="UTF-8" />

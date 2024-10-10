@@ -1,5 +1,14 @@
 com/demo/invoice/types/PosInvoice.class
+org/example/RewardTransformer.class
+org/example/AppConfigs.class
+org/example/RecordBuilder.class
+org/example/serdes/AppSerde$PosInvoiceSerde.class
+org/example/serdes/AppSerde$HadoopRecordSerde.class
 com/demo/invoice/types/HadoopRecord.class
+com/demo/invoice/types/RewardNotification.class
+org/example/RewardsApplication.class
+org/example/PosFanoutApp.class
+org/example/serdes/AppSerde$NotificationSerde.class
 com/demo/invoice/types/Notification.class
 com/demo/invoice/types/DeliveryAddress.class
 com/demo/invoice/types/LineItem.class

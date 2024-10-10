@@ -9,6 +9,7 @@
         <option value="$PROJECT_DIR$/../JsonAvroToPOJO/pom.xml" />
         <option value="$PROJECT_DIR$/../kafkaConsumerDemo/pom.xml" />
         <option value="$PROJECT_DIR$/../KafkaStreamsDemo/pom.xml" />
+        <option value="$PROJECT_DIR$/../JsonInvoiceProject/pom.xml" />
       </list>
     </option>
   </component>

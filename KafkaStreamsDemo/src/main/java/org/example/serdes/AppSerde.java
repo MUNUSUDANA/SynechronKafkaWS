@@ -3,6 +3,7 @@ package org.example.serdes;
 import com.demo.invoice.types.HadoopRecord;
 import com.demo.invoice.types.Notification;
 import com.demo.invoice.types.PosInvoice;
+import com.demo.invoice.types.RewardNotification;
 import com.demo.types.Product;
 import com.demo.types.User;
 import org.apache.kafka.common.serialization.LongDeserializer;
@@ -55,6 +56,22 @@ public class AppSerde {
 
         Map<String, Object> serdeConfigs = new HashMap<>();
         serdeConfigs.put(JsonDeserializer.VALUE_CLASS_NAME_CONFIG, PosInvoice.class);
+        serde.configure(serdeConfigs, false);
+
+        return serde;
+    }
+
+    static final class RewardNotificationSerde extends Serdes.WrapperSerde<RewardNotification> {
+        RewardNotificationSerde() {
+            super(new JsonSerializer<>(), new JsonDeserializer<>());
+        }
+    }
+
+    public static Serde<RewardNotification> RewardNotification() {
+        RewardNotificationSerde serde = new RewardNotificationSerde();
+
+        Map<String, Object> serdeConfigs = new HashMap<>();
+        serdeConfigs.put(JsonDeserializer.VALUE_CLASS_NAME_CONFIG, RewardNotificationSerde.class);
         serde.configure(serdeConfigs, false);
 
         return serde;

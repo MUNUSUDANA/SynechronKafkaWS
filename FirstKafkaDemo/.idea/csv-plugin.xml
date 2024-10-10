@@ -59,6 +59,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../KafkaStreamsDemo/src/main/java/org/example/RewardsApplication.java">
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../KafkaStreamsDemo/src/main/java/org/example/UserStreams.java">
           <value>
             <Attribute>
